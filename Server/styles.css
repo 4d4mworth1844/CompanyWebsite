@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-ash-gray {
+    background-color: #CCDAD1;
+}
+
+.bg-outer-space {
+    background-color: #474A48;
+}
+
+.bg-dark-tangerine {
+    background-color: #FCA311;
+}
+
+.bg-midnight-express {
+    background-color: #14213D;
+}
+
+.bg-gray-90 {
+    background-color: #E5E5E5;
+}
+
+.bg-raven {
+    background-color: #6c757d;
+}
+
+.mnavbar {
+    overflow: hidden;
+    font-family: helvetica;
+}
+
+.mnavbar a {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mnavbar a:hover {
+    background-color: black;
+    color: white;
+}
+
+.mdropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.mdropdown .mdropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.mnavbar a:hover, .mdropdown:hover .mdropbtn {
+    background-color: black;
+    color: white;
+}
+
+.mdropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mdropdown-content a {
+    font-size: 14px;
+    float: none;
+    color: black;
+    font-weight: lighter;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mdropdown-content a:hover {
+    font-size: 14px;
+    text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
+    background-color: white;
+    color: black;
+}
+
+.mdropdown:hover .mdropdown-content {
+    display: block;
+}
+
+/* -----------------search bar--------------*/
+.mnavbar .search-container {
+    float: right;
+}
+
+.mnavbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: black;
+}
+
+.mnavbar .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 16px;
+    border: black;
+    cursor: pointer;
+}
+
+.mnavbar .search-container button:hover {
+    background: black;
+}
+/* --------------------------search bar-----------------------------*/
+
+/* ----------general button----------*/
+.mbutton-left {
+    float: left;
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mbutton-right {
+    float: right;
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mbutton-left:hover {
+    background-color: red;
+}
+
+.mbutton-right:hover {
+    background-color: red;
+}
+
+/*----------slide animation---------*/
+.my-slide {
+    display: none;
+}
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.big-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.big-image-container img {
+    border-radius: 20px;
+}
+
+.image-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.gallery:hover {
+    border: 2px solid black;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.image-description {
+    padding: 15px;
+    text-align: center;
+}
+
+.image-responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .image-responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .image-responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text-dark-tangerine {
+    color: #FCA311;
+}
